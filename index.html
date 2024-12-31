@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="This is a calculator designed for regular calculations!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator | HM Jubaer</title>
+</head>
+<body>
+    <main class="calculator">
+        
+        <div class="display-part">
+            <div class="manual">
+                <img src="User Manual.png" alt="user manual" id="manual">
+            </div>
+            <input type="text" id="display" class="display-result" value="" placeholder="=" readonly>
+        </div>
+
+        
+        <div class="keypad-part">
+             
+            <div class="keypad">
+                <button class="key" id="clear" aria-label="Clear All">AC</button>
+                <button class="key" id="delete" aria-label="Delete">
+                    <img src="Triangle Arrow.png" alt="Backspace Arrow" loading="lazy">
+                </button>
+                <button class="key" id="posNeg" aria-label="Toggle Positive/Negative">+/-</button>
+                <button class="key" id="division" aria-label="Divide">/</button>
+            </div>
+
+             
+            <div class="keypad">
+                <button class="key" id="seven" aria-label="7">7</button>
+                <button class="key" id="eight" aria-label="8">8</button>
+                <button class="key" id="nine" aria-label="9">9</button>
+                <button class="key" id="multiplication" aria-label="Multiply">x</button>
+            </div>
+
+          
+            <div class="keypad">
+                <button class="key" id="four" aria-label="4">4</button>
+                <button class="key" id="five" aria-label="5">5</button>
+                <button class="key" id="six" aria-label="6">6</button>
+                <button class="key" id="minus" aria-label="Subtract">-</button>
+            </div>
+ 
+
+            <div class="keypad">
+                <button class="key" id="one" aria-label="1">1</button>
+                <button class="key" id="two" aria-label="2">2</button>
+                <button class="key" id="three" aria-label="3">3</button>
+                <button class="key" id="plus" aria-label="Add">+</button>
+            </div>
+
+         
+            <div class="keypad">
+                <button class="key" id="percentage" aria-label="Percentage">%</button>
+                <button class="key" id="zero" aria-label="0">0</button>
+                <button class="key" id="decimal" aria-label="Decimal Point">.</button>
+                <button class="key" id="key-equal" aria-label="Equals">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

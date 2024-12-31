@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --deep-blue: #172031;
+    --steel-gray: #53697F;
+    --neon-green: #00FF1E;
+    --rusty-red: #724C4C;
+    --blush-pink: #FDE7E7;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--blush-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aref Ruqaa Ink';
+}
+
+.calculator {
+    background-color: var(--deep-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+    border-radius: 20px;
+    width: 320px;
+}
+
+.display-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.manual {
+    margin-bottom: 3rem;
+}
+
+.display-result {
+    background-color: var(--deep-blue);
+    height: 4rem;
+    width: 100%; 
+    text-align: right;
+    padding: 5px; 
+    border: none;
+    color: var(--blush-pink);
+    font-size: 1.5rem; 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.display-result:focus {
+    outline: none; 
+}
+
+.keypad-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.key {
+    height: 4rem;
+    width: 4rem;
+    padding: 5px;
+    background-color: var(--rusty-red);
+    color: var(--blush-pink);
+    font-size: 2rem;
+    border: 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.key:hover {
+    background-color: #8b6666;
+}
+
+#key-equal {
+    background-color: var(--steel-gray);
+}
+
+#plus, #minus, #multiplication, #division, #posNeg, #clear {
+    color: var(--neon-green);
+}
